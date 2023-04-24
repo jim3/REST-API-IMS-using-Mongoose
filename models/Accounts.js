@@ -31,6 +31,8 @@ const accountsSchema = new Schema({
     timestamps: true,
 });
 
+// TODO - add pre-save hook to hash password ( after you figure out how to do it! :/ )
+
 // Create Accounts model
 const Accounts = db.model("Accounts", accountsSchema);
 
