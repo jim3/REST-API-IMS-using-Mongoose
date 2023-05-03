@@ -35,7 +35,6 @@ const createPart = async (req, res) => {
         });
 
         // Insert document into database
-        // TODO - add error handling & validation
         await Parts.save();
 
         res.status(201).json({ success: true, message: "Part created successfully" });
